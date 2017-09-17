@@ -1,32 +1,29 @@
 #!/bin/bash
 
-function reverse() {
+declare -a dirContent
+
+function reverse()
+{
     local temp tempGoTo x=$((${#dirContent[@]} / 2))
-    local y=${x%.*}
-    
-    for (( i=0; i<y; i++ ))
+    for (( j=0; j<x; j++ ))
     do
-	temp=${dirContent[$i]}
-	#tempGoTo=`expr ${#dirContent[@]} - '(' $i + 1 ')'`
-	tempGoTo=$((${#dirContent[@]}-(i+1)))
-        #echo $temp is going to $tempGoTo
-	dirContent[$i]=${dirContent[$tempGoTo]}
-	#echo ${dirContent[$i]} was sent to $i
-	dirContent[$tempGoTo]=$temp
+	temp="${dirContent[$j]}"
+	tempGoTo=$((${#dirContent[@]}-(j+1)))
+	dirContent[$j]="${dirContent[$tempGoTo]}"
+	dirContent[$tempGoTo]="$temp"
     done
-    echo output:  "${dirContent[@]}"
 }
 
-function main() {
-    declare -a dirContent
-    for x in /$1/*
+function main()
+{
+    cd "$1"
+    for i in *
     do
-	dirContent+=("${x##*/}")
+	dirContent+=("$i")
     done
-    echo input:  "${dirContent[@]}"
     reverse
-    #$dirContent
 }
+
 
 main "$1"
-
+echo ${dirContent[@]}
