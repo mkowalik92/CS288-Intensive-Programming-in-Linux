@@ -1,3 +1,3 @@
 # CS288-Intensive-Programming-in-Linux
 # Do your own homework.
-# Someone isn't doing their homework themselves...
+# Solutions will be posted after due dates from now on.
