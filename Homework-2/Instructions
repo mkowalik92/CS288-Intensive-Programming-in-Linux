@@ -1,3 +1,5 @@
+Homework 2 on Creating Directory Tree
+
 Write a Linux Bash script, create.sh which creates a directory tree with 
 depth d and breadth b in a programmable depth/breadth-first fashion, where 
 depth-first or breadth-first can be crontrolled by a command line parameter. 
