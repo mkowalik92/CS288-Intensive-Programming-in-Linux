@@ -1,3 +1,5 @@
+Homework 1 on Writing Bash scripts
+
 Write a Bash script, count.sh, which builds a table of counters for the commands under /bin in alphabetical order. 
 For example, there are 9 commands starting with "a" (a2p addftinfo addr2line apropos ar arch as ash awk) 
 while there are 11 commands starting with "z" (zcat zcmp zdiff zegrep zfgrep zforce zgrep zless zmore znew zsoelim). 
@@ -9,12 +11,14 @@ a 9
 z 11
 Use loop and array to design and implement this script.
 
+---------------------------------------------------------------------------------------------------------
 
 Write a Bash script, reverse.sh, which reverses the contents of a directory passed as a parameter. 
 Assuming /my/dir contains "cache cron games lib log run tmp," your program "reverse.sh /my/dir" will 
 return "tmp run log lib games cron cache." Use an array and two functions: main() and reverse(). 
 You will manually manipulate the list as we did today. DO NOT use the built-in command sort -r.
 
+---------------------------------------------------------------------------------------------------------
 
 Write a Bash script, filter.sh, which prints those files/directories that have the size greater 
 than the average file size of the directory. Suppose for example that the directory /my/dir has 
@@ -24,6 +28,7 @@ program "filter.sh /my/dir" will list "a c d" since the size of each of the thre
 where main calls average and filter, and average computes the average file size of a directory and 
 filter filters out those that have less than the average.
 
+---------------------------------------------------------------------------------------------------------
 
 Write a Bash script, insert-sort.sh, which sorts a list of command line parameters in ascending order. 
 For example, your command will look something like: 
