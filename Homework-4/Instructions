@@ -1,3 +1,5 @@
+Homework 4 on Pointers/References
+
 Write a C program that prints a memory map. For example, executing "hello this is CS 288" 
 where "hello" is an executable file will print a map such as the one shown below.
 
