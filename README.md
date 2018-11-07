@@ -1,3 +1,2 @@
 # CS288-Intensive-Programming-in-Linux
-# Do your own homework.
-# Solutions will be posted after due dates from now on.
+https://web.njit.edu/~sohna/cs288/index.html
